@@ -1,0 +1,194 @@
+:root {
+    --font-fredoka: 'Fredoka One', cursive;
+    --font-poppins: 'Poppins', sans-serif;
+    --text-primary: #fe5e35;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* --------------navbar start---------------------------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 80px;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-item {
+    font-family: var(--font-poppins);
+    margin-left: 90px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-item:first-child {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+/* ---------------hero secton start---------------- */
+.intro-section {
+    margin: 70px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---------------left section of hero section----------- */
+.left-section {
+    min-width: 368px;
+    width: 60%;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    min-width: 368px;
+    width: 40%;
+    overflow: hidden;
+}
+
+.left-section h3 {
+    font-family: var(--font-poppins);
+    font-size: 30px;
+}
+
+.left-section img {
+    width: 50px;
+    height: 50px;
+}
+
+.left-section h1 {
+    font-family: var(--font-fredoka);
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin-top: 25px;
+}
+
+.sub-headlines {
+    margin-left: 90px;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.sub-headlines h5 {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-poppins);
+    font-size: 20px;
+    padding: 20px;
+}
+
+.sub-headlines h5 img {
+    background: var(--text-primary);
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-right: 25px;
+    border-radius: 50%;
+}
+
+.text {
+    margin-top: 40px;
+    text-align: left;
+    font-family: var(--font-poppins);
+    padding-right: 40px;
+    color: gray;
+}
+
+.action-btns {
+    margin-top: 40px;
+}
+
+.action-btns button.action-btn {
+    background: var(--text-primary);
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+/* --------right section start */
+
+.headphone-div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* display: none; */
+}
+
+.headphone-div img:nth-child(1) {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    width: 130px;
+    height: 130px;
+    filter: drop-shadow(0px 0px 5px);
+}
+
+.discount-content {
+    position: absolute;
+    top: 46%;
+    left: 6%;
+    color: #fff;
+    font-family: var(--font-fredoka);
+}
+
+img[alt="headphone"] {
+    position: absolute;
+    width: 80%;
+    top: 0%;
+    left: 10%;
+    z-index: -1;
+}
+
+.dots {
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.yellow-dot {
+    background-color: rgb(230, 230, 0);
+}
+
+.tomato-dot {
+    background-color: tomato;
+}
+
+.black-dot {
+    background-color: black;
+}
+
+.right-section button.action-btn {
+    padding: 20px 40px;
+    border-radius:30px ;
+    color: #fff;
+    font-weight: 700;
+    background-color: var(--text-primary);
+    align-self: center;
+}
