@@ -41,16 +41,68 @@ nav {
     font-weight: 700;
 }
 
+.icons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.4rem;
+}
+
+nav .menuIcon
+{
+    display: none;
+}
+@media screen and (max-width:1120px) {
+    nav img
+    {
+        width: 80px;
+    }
+
+    nav .menuIcon
+    {
+        display: inline;
+    }
+    nav .nav-items
+    {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        position: absolute;
+        display: none;
+        top: 14%;
+        right: 6%;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid #fe5e35;
+    }
+    .nav-item
+    {
+        margin-left: 0px;
+    }
+    .menuIcon:focus ~ .nav-items
+    {
+        display: flex;
+    }
+    .icons
+    {
+        display: none;
+    }
+}
+
 /* ---------------hero secton start---------------- */
 .intro-section {
     margin: 70px 80px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 
 /* ---------------left section of hero section----------- */
 .left-section {
-    min-width: 368px;
     width: 60%;
 }
 
@@ -123,72 +175,107 @@ nav {
 }
 
 /* --------right section start */
-
-.headphone-div {
+.right-section
+{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img-content
+{
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /* display: none; */
+}
+.headphone-img
+{
+    width: 100%;
 }
 
-.headphone-div img:nth-child(1) {
+.discount-tag
+{
     position: absolute;
-    top: 40%;
-    left: 0%;
-    width: 130px;
-    height: 130px;
-    filter: drop-shadow(0px 0px 5px);
-}
-
-.discount-content {
-    position: absolute;
-    top: 46%;
-    left: 6%;
+    bottom: 35%;
+    width: 100px;
+    height: 100px;
     color: #fff;
-    font-family: var(--font-fredoka);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: crimson;
+    gap: 10px;
+    background: url('../images/discount.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-img[alt="headphone"] {
-    position: absolute;
-    width: 80%;
-    top: 0%;
-    left: 10%;
-    z-index: -1;
-}
-
-.dots {
+.dots-group
+{
     width: 100%;
-    margin-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-
-.dot {
-    width: 30px;
-    height: 30px;
+.dot
+{
+    padding: 1rem;
     border-radius: 50%;
 }
-
-.yellow-dot {
-    background-color: rgb(230, 230, 0);
+.dot1 
+{
+    background-color: yellow;
 }
-
-.tomato-dot {
-    background-color: tomato;
+.dot2
+{
+    background-color: #fe5e35;
 }
-
-.black-dot {
+.dot3 
+{
     background-color: black;
 }
-
 .right-section button.action-btn {
-    padding: 20px 40px;
-    border-radius:30px ;
-    color: #fff;
-    font-weight: 700;
-    background-color: var(--text-primary);
-    align-self: center;
+    margin-top: 40px;
+    background: var(--text-primary);
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:1080px) {
+    .intro-section
+    {
+        justify-content: center;
+        gap: 80px;
+        margin: 0;
+    }
+    .left-section h3
+    {
+        font-size: 20px;
+    }
+    img[alt="circles"]
+    {
+        width: 40px;
+    }
+    .left-section h1
+    {
+        font-size: 30px;
+    }
+    .sub-headlines
+    {
+        margin-left: 0px;
+
+    }
+    h5.sub-headline
+    {
+        font-size: 15px;
+    }
+    img[alt="plus"]
+    {
+        width: 5px;
+    }
+
 }
